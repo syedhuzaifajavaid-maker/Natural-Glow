@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural Glow — Skincare That Radiates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Natural Glow home">
+        <span class="logo__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 22c4-6 12-6 16 0M14 16c2-3 10-3 12 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo__text">Natural <em>Glow</em></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#products" class="nav__link">Shop</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Open shopping cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 6h15l-1.5 9h-12L6 6z"/>
+            <circle cx="9" cy="20" r="1.5" fill="currentColor"/>
+            <circle cx="18" cy="20" r="1.5" fill="currentColor"/>
+            <path d="M6 6L5 3H2"/>
+          </svg>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__bg"></div>
+      <div class="container hero__content">
+        <p class="hero__tag">Premium Skincare</p>
+        <h1 class="hero__title">Reveal Your <span>Natural Glow</span></h1>
+        <p class="hero__desc">Gentle, effective formulas for brighter, smoother skin. Crafted with care for your daily radiance ritual.</p>
+        <div class="hero__cta">
+          <a href="#products" class="btn btn--primary">Shop Collection</a>
+          <a href="#about" class="btn btn--outline">Our Story</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container features__grid">
+        <article class="feature">
+          <div class="feature__icon">✦</div>
+          <h3>Natural Ingredients</h3>
+          <p>Thoughtfully selected botanicals and actives for visible results.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon">◇</div>
+          <h3>Dermatologist Friendly</h3>
+          <p>Gentle formulas suitable for daily use on all skin types.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon">◎</div>
+          <h3>Visible Results</h3>
+          <p>Brighter, smoother skin with consistent use of our trio.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__eyebrow">Our Collection</p>
+          <h2 class="section-header__title">Shop Best Sellers</h2>
+          <p class="section-header__desc">Three essentials to polish, brighten, and nourish your skin.</p>
+        </header>
+        <div class="products__grid" id="productsGrid">
+          <!-- Products rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__visual">
+          <div class="about__card">
+            <span class="about__badge">Since 2024</span>
+            <p class="about__quote">"Beauty begins with healthy, glowing skin."</p>
+          </div>
+        </div>
+        <div class="about__content">
+          <p class="section-header__eyebrow">About Natural Glow</p>
+          <h2>Skincare Rooted in Nature & Science</h2>
+          <p>Natural Glow was born from a simple belief: everyone deserves radiant, confident skin. Our skin polish, whitening serum, and whitening cream work together as a complete brightening routine.</p>
+          <p>Each product is formulated to exfoliate gently, target uneven tone, and lock in moisture—without harsh chemicals. Blue skies, clear skin—that's the Natural Glow promise.</p>
+          <ul class="about__list">
+            <li>Cruelty-free & responsibly made</li>
+            <li>Paraben-free formulas</li>
+            <li>Made for daily glow rituals</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-header__title section-header__title--center">Loved by Our Community</h2>
+        <div class="testimonials__grid">
+          <blockquote class="testimonial">
+            <p>"The skin polish leaves my face so smooth. I've never felt such a soft texture after one use."</p>
+            <footer>— Ayesha K.</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Whitening serum gave me a noticeable glow in two weeks. It's now a must in my routine."</p>
+            <footer>— Maria L.</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"The cream is lightweight but deeply hydrating. Perfect under makeup or at night."</p>
+            <footer>— Fatima R.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <p class="section-header__eyebrow">Get in Touch</p>
+          <h2>We're Here to Help</h2>
+          <p>Questions about ingredients, orders, or which product is right for you? Reach out anytime.</p>
+          <ul class="contact__details">
+            <li><strong>Email:</strong> hello@naturalglow.com</li>
+            <li><strong>Hours:</strong> Mon–Sat, 9am–6pm</li>
+          </ul>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo logo--footer">
+        <span class="logo__text">Natural <em>Glow</em></span>
+      </a>
+      <p class="footer__copy">&copy; <span id="year"></span> Natural Glow. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#products">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <aside class="cart-overlay" id="cartOverlay" aria-hidden="true"></aside>
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+    <div class="cart-panel__header">
+      <h2>Your Cart</h2>
+      <button class="cart-panel__close" id="cartClose" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-panel__items" id="cartItems">
+      <p class="cart-empty" id="cartEmpty">Your cart is empty</p>
+    </div>
+    <div class="cart-panel__footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="btn btn--primary btn--full" id="checkoutBtn" disabled>Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Checkout Modal -->
+  <dialog class="modal" id="checkoutModal">
+    <div class="modal__content">
+      <button class="modal__close" id="checkoutClose" aria-label="Close">&times;</button>
+      <h2>Checkout</h2>
+      <form id="checkoutForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkoutName">Full Name</label>
+            <input type="text" id="checkoutName" required>
+          </div>
+          <div class="form-group">
+            <label for="checkoutPhone">Phone</label>
+            <input type="tel" id="checkoutPhone" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="checkoutAddress">Delivery Address</label>
+          <textarea id="checkoutAddress" rows="2" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="checkoutCity">City</label>
+          <input type="text" id="checkoutCity" required>
+        </div>
+        <div class="checkout-summary">
+          <p>Order Total: <strong id="checkoutTotal">$0.00</strong></p>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Place Order</button>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Order Success Modal -->
+  <dialog class="modal modal--success" id="successModal">
+    <div class="modal__content modal__content--center">
+      <div class="success-icon">✓</div>
+      <h2>Thank You!</h2>
+      <p>Your order has been placed successfully. We'll contact you shortly to confirm delivery.</p>
+      <button class="btn btn--primary" id="successClose">Continue Shopping</button>
+    </div>
+  </dialog>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
